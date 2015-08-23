@@ -1,0 +1,13 @@
+[include]
+  path = ~/.gitconfig.local
+[color]
+  ui = true
+[core]
+  autocrlf = input
+[alias]
+  st = status
+  ci = commit
+  co = checkout
+  br = branch
+  unstage = reset HEAD --
+  last = log -1 HEAD
