@@ -26,3 +26,8 @@
 
 (setq tab-width 4)
 (setq-default indent-tabs-mode nil)
+
+(require 'mouse)
+(xterm-mouse-mode t)
+(defun track-mouse (e))
+(setq mouse-sel-mode t)
