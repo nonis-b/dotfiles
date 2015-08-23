@@ -1,7 +1,6 @@
 #!/bin/bash
-mkdir -p ~/dotfiles_old/
-files='.bashrc .emacs .gitconfig'
+files='.bashrc .emacs .gitconfig .gitignore'
 for file in $files; do
-    mv ~/$file ~/dotfiles_old/
+    rm $file
     ln -s ~/.dotfiles/$file ~/$file
 done
